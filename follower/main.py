@@ -1,5 +1,8 @@
 """
 Follow the white house rabbit
+
+This fetches tweets from an user and prints
+the full json output from the api.
 """
 
 import os
@@ -24,4 +27,7 @@ def query(screen_name='realDonaldTrump'):
     print(json.dumps(user_timeline))
 
 if __name__ == '__main__':
-    query(sys.argv[1])
+    try:
+        query(sys.argv[1])
+    except IndexError as e:
+        print("Missing Twitter user name as first parameter")
