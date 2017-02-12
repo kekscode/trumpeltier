@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Follow the white house rabbit
 
