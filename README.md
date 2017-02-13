@@ -11,9 +11,13 @@ A demo how to analyze text snippets in python
 * Feed the latest tweets from Trump with `./follower/fetch_timeline.py realdonaldtrump | storage/save_to_mongo.py`
 * Print all tweets using `python analytics/trumpeltier.py dump`
 
-## Requirements
+## Python requirements
 
 * Python 3
 * twython
 * pymongo
+* nltk
+
+## Database requirements
+
 * MongoDB
