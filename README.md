@@ -5,6 +5,8 @@ A demo how to analyze text snippets in python
 * `storage/save\_to_mongo.py` saves json from fetch\_timeline into mongodb
 * `analytics/trumpeltier.py` prints plain text tweets from database to feed into analytics
 
+Some analytics need corpora from NLTK. See [download instructions][1].
+
 ## Try
 
 * Start a local mongodb
@@ -21,3 +23,5 @@ A demo how to analyze text snippets in python
 ## Database requirements
 
 * MongoDB
+
+[1]: http://www.nltk.org/data.html
