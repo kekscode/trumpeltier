@@ -12,6 +12,7 @@ import json
 from twython import Twython
 from twython import TwythonError
 
+
 CONSUMER_KEY = os.environ.get('TWITTER_CONSUMER_KEY')
 CONSUMER_SECRET_KEY = os.environ.get('TWITTER_CONSUMER_SECRET_KEY')
 ACCESS_TOKEN = os.environ.get('TWITTER_ACCESS_TOKEN')
