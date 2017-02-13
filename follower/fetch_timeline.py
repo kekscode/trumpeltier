@@ -19,9 +19,10 @@ ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET')
 
 def query(screen_name='realDonaldTrump'):
     # Requires Authentication as of Twitter API v1.1
-    twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET_KEY, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+    twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET_KEY, \
+        ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     try:
-        user_timeline = twitter.get_user_timeline(screen_name=screen_name)
+        user_timeline = twitter.get_user_timeline(screen_name=screen_name, count=200)
     except TwythonError as e:
         print(e)
 
